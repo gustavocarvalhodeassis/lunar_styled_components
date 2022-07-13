@@ -33,6 +33,13 @@ export const IntroWidth = styled.div`
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+    @media screen and (min-width: 2600px){
+        padding: var(--content-margin);
+    }
+    @media screen and (max-height: 630px){
+        padding: var(--content-margin);
+    }
 `
 
 export const MegaTitle = styled.h1`

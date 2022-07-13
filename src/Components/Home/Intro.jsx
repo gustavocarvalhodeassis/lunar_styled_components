@@ -6,28 +6,26 @@ const Intro = () => {
     return (
 
         <EncreaseWidth>
-            <ContentMargin>
-                <Container>
-                    <IntroSection>
-                        <IntroWidth>
-                            <MegaTitle>
-                                Sistema de gestão empresarial.
-                            </MegaTitle>
-                            <Paragraph>
-                                Lorem ipsum dolor sit amet,
-                                consectetur adipiscing
-                                elit. In nec magna id
-                                ex mollis mollis. Curabitur
-                                sed neque at turpis blandit
-                                sodales ac a libero.
-                            </Paragraph>
-                            <FilledButton>
-                                Saiba mais
-                            </FilledButton>
-                        </IntroWidth>
-                    </IntroSection>
-                </Container>
-            </ContentMargin>
+            <Container>
+                <IntroSection>
+                    <IntroWidth>
+                        <MegaTitle>
+                            Sistema de gestão empresarial.
+                        </MegaTitle>
+                        <Paragraph>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing
+                            elit. In nec magna id
+                            ex mollis mollis. Curabitur
+                            sed neque at turpis blandit
+                            sodales ac a libero.
+                        </Paragraph>
+                        <FilledButton>
+                            Saiba mais
+                        </FilledButton>
+                    </IntroWidth>
+                </IntroSection>
+            </Container>
         </EncreaseWidth>
 
     );
