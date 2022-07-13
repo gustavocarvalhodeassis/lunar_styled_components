@@ -29,14 +29,23 @@ export const NavLinks = styled.ul`
     @media screen and (max-width: 890px) {
         position: fixed;
         flex-direction: column;
-        transform: translate(400%, 0);
+        padding: 30px;
+        background: var(--high-light-background);
+        box-shadow: var(--shadow);
+        border-radius: 5px;
+        right: 40px;
+        top: 60px;
+        transform: ${(props) => (props.openMenu ? 'none' : 'translate(120%,0)')};
     }
 `
 
-export const NavLink = styled.li`
+export const NavLink = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
+    outline: none;
+    background: none;
     padding: 15px 30px;
     border-radius: 50px;
     font-weight: bold;
@@ -58,14 +67,14 @@ export const MenuIcon = styled.div`
     gap: 5px;
     flex-direction: column;
     padding: 15px;
+    background-color: ${(props) => (props.openMenu ? 'rgba(0,0,0,0.08)' : '#fff')};
     border-radius: 50px;
-    transition: var(--main-transition);
+    transition: all 0.25s ease;
     cursor: pointer;
 
     &:hover{
         background-color: rgba(0,0,0,0.05);
     } &:active{
-        background-color: rgba(0,0,0,0.08);
         transform: var(--active-transition);
     }
 
