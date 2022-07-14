@@ -27,6 +27,32 @@ export const FilledButton = styled.button`
     }
 `
 
+export const TextButton = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    background: none;
+    transition: var(--main-transition);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: var(--header-link-font-size);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: underline;
+    gap: 20px;
+
+    &:hover{
+        background: rgba(0,0,0,0.05);
+    }
+
+    &:active{
+        transform: var(--active-transition);
+    }
+`
+
 export const Title = styled.h1`
     color: var(--high-dark-color);
     font-size: var(--h1-font-size);
@@ -70,6 +96,23 @@ export const Card = styled.div`
     justify-content: flex-end;
     gap: 15px;
     transition: var(--main-transition);
+
+    @media screen and (max-width: 650px){
+        max-width: none;
+    }
+`
+export const LinkCard = styled.div`
+    padding: 20px 30px;
+    background: ${(props) => (props.background === '1' ? 'var(--primary-color)' : '#E8E8ED')};
+    max-width: 210px;
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15px;
+    transition: var(--main-transition);
     box-shadow:  0px 15px 20px 0 rgba(0,0,0,0.0);;
     cursor: pointer;
 
@@ -84,5 +127,19 @@ export const Card = styled.div`
     &:active{
         transform: scale(1.05);
     }
+`
 
+export const GridImage = styled.div`
+    align-items: start;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(var(--grid-image-column), minmax(0,2fr));
+`
+
+export const Figure = styled.figure`
+    width: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 `

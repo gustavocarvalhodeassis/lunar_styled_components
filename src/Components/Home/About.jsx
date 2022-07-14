@@ -12,9 +12,9 @@ const About = () => {
         <AboutSection>
             <ContentMargin>
                 <AboutSocialIcons>
-                    <Icon><CgFacebook size={50} /></Icon>
-                    <Icon><CgInstagram size={50} /></Icon>
-                    <Icon><CgTwitter size={50} /></Icon>
+                    <Icon><CgFacebook size={50} color={'rgba(0,0,0,0.5)'}/></Icon>
+                    <Icon><CgInstagram size={50} color={'rgba(0,0,0,0.5)'}/></Icon>
+                    <Icon><CgTwitter size={50} color={'rgba(0,0,0,0.5)'}/></Icon>
                 </AboutSocialIcons>
             </ContentMargin>
             <EncreaseWidth>

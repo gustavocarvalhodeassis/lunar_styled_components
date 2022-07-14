@@ -1,5 +1,5 @@
-import { Paragraph, FilledButton, Container, EncreaseWidth, ContentMargin } from "../Components";
-import { IntroSection, IntroWidth, MegaTitle, HomeSection } from "./HomeComponents";
+import { Paragraph, FilledButton, Container, EncreaseWidth } from "../Components";
+import { IntroSection, IntroWidth, MegaTitle } from "./HomeComponents";
 
 
 const Intro = () => {

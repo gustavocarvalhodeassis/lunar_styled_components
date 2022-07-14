@@ -45,6 +45,7 @@ export const IntroWidth = styled.div`
 export const MegaTitle = styled.h1`
     font-size: var(--mega-title-font-size);
     font-weight: bold;
+    text-transform: uppercase;
     color: var(--high-dark-color);
 `
 {/* FIM INTRO */ }
@@ -121,4 +122,86 @@ export const AboutCards = styled.div`
     @media screen and (max-width: 960px) {
         margin-top: 40px;
     }
+`
+{/* FIM ABOUT */ }
+
+{/* SYSTEM IMAGES */ }
+
+export const SystemImagesSection = styled.section`
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--content-margin);
+`
+
+export const SystemImagesContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: var(--content-margin);
+`
+
+export const SystemImagesText = styled.div`
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    @media screen and (max-width: 960px){
+        flex-direction: column;
+    }
+`
+
+{/* FIM SYSTEM IMAGES */ }
+
+{/* REPORTS */ }
+
+export const ReportsSection = styled.section`
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--content-margin);
+`
+
+export const ReportsText = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    @media screen  and (max-width: 960px){
+        flex-direction: column;
+    }
+`
+
+export const ReportsList = styled.div`
+    display: flex;
+`
+
+export const ReportIndex = styled.div`
+    display: flex;
+    align-items:center;
+    gap: 40px;
+`
+
+export const ReportImage = styled.figure`
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    @media screen and (max-width: 960px){
+        width: 100%;
+    }
+`
+
+export const ReportDesc = styled.h1`
+    font-size: 20px;
+    font-weight: bold;
+`
+
+export const ReportName = styled.p`
+    
+`
+export const ReportBusy = styled.p`
+
 `
