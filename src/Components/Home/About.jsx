@@ -1,6 +1,6 @@
 import { AboutCards, AboutContent, AboutCounterClient, AboutSection, AboutSocialIcons, Icon, NumberCounter } from "./HomeComponents";
 import { CgFacebook, CgInstagram, CgTwitter, CgFileDocument, CgFolder, CgDollar } from 'react-icons/cg'
-import { Card, Container, ContentMargin, EncreaseWidth, FlexColumn, Title } from "../Components";
+import { Card, CardTitle, Container, ContentMargin, EncreaseWidth, FlexColumn, Title } from "../Components";
 
 const About = () => {
 
@@ -10,13 +10,11 @@ const About = () => {
 
     return (
         <AboutSection>
-            <ContentMargin>
                 <AboutSocialIcons>
-                    <Icon><CgFacebook size={50} color={'rgba(0,0,0,0.5)'}/></Icon>
-                    <Icon><CgInstagram size={50} color={'rgba(0,0,0,0.5)'}/></Icon>
-                    <Icon><CgTwitter size={50} color={'rgba(0,0,0,0.5)'}/></Icon>
+                    <Icon><CgFacebook size={35} color={'rgba(0,0,0,0.5)'}/></Icon>
+                    <Icon><CgInstagram size={35} color={'rgba(0,0,0,0.5)'}/></Icon>
+                    <Icon><CgTwitter size={35} color={'rgba(0,0,0,0.5)'}/></Icon>
                 </AboutSocialIcons>
-            </ContentMargin>
             <EncreaseWidth>
                 <Container>
                     <AboutContent>
@@ -40,21 +38,21 @@ const About = () => {
                             <AboutCards>
                                 <Card background={'1'}>
                                     <CgFileDocument size={35} color={'var(--high-light-color)'} />
-                                    <Title style={customColorStyle('var(--high-light-color)')}>
+                                    <CardTitle style={customColorStyle('var(--high-light-color)')}>
                                         Documentos
-                                        <br />Fiscais.</Title>
+                                        <br />Fiscais.</CardTitle>
                                 </Card>
                                 <Card>
                                     <CgFolder size={35} color={'var(--high-dark-color)'} />
-                                    <Title>
+                                    <CardTitle style={customColorStyle('var(--high-dark-color)')}>
                                         Controle
-                                        <br />De estoque.</Title>
+                                        <br />De estoque.</CardTitle>
                                 </Card>
                                 <Card>
                                     <CgDollar size={35} color={'var(--high-dark-color)'} />
-                                    <Title>
+                                    <CardTitle style={customColorStyle('var(--high-dark-color)')}>
                                         Controle
-                                        <br />Financeiro.</Title>
+                                        <br />Financeiro.</CardTitle>
                                 </Card>
                             </AboutCards>
                         </FlexColumn>

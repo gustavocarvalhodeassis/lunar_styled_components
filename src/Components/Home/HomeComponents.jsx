@@ -15,10 +15,10 @@ export const IntroSection = styled.section`
     justify-content: center;
     flex-direction: column;
 
-    @media screen and (min-width: 2600px) {
+    @media screen and (min-height: 1500px) {
         height: auto;
         justify-content: start;
-        margin-top: 120px;
+        margin: 120px 0;
     }
 
     @media screen and (max-height: 630px) {
@@ -66,6 +66,7 @@ export const AboutSocialIcons = styled.div`
     align-items: center;
     justify-content: center;
     gap: 40px;
+    margin: var(--content-margin);
 `
 
 export const Icon = styled.div`
@@ -76,7 +77,6 @@ export const Icon = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 5px var(--primary-color) solid;
     transition: var(--main-transition);
 
     &:active{
@@ -132,13 +132,12 @@ export const SystemImagesSection = styled.section`
     width: 100%;
     flex-direction: column;
     align-items: center;
-    margin: var(--content-margin);
 `
 
 export const SystemImagesContent = styled.div`
     display: flex;
     flex-direction: column;
-    gap: var(--content-margin);
+    gap: var(--section-title-gap);
 `
 
 export const SystemImagesText = styled.div`
@@ -179,29 +178,92 @@ export const ReportsList = styled.div`
 export const ReportIndex = styled.div`
     display: flex;
     align-items:center;
-    gap: 40px;
+    flex-direction: row;
+    gap: 100px;
+
+    @media screen and (max-width: 960px) {
+        gap: 40px;
+    }
+    @media screen and (max-width: 755px) {
+        flex-direction: column;
+    }
 `
 
-export const ReportImage = styled.figure`
-    width: 300px;
+export const ReportImage = styled.img`
+    min-width: 350px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
+    object-fit: cover;
+    border-radius: 5px;
 
     @media screen and (max-width: 960px){
         width: 100%;
+    }
+    @media screen and (max-width: 650px) {
+        height: 400px;
     }
 `
 
 export const ReportDesc = styled.h1`
     font-size: 20px;
     font-weight: bold;
+    color: var(--high-dark-color);
 `
 
 export const ReportName = styled.p`
-    
+    color: var(--low-dark-color);
 `
 export const ReportBusy = styled.p`
-
+    color: var(--low-dark-color);
 `
+
+export const ReportAction = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 20px;
+`
+
+export const ReportCounter = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 15px;
+`
+
+export const Counter = styled.div`
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: ${(props) => (props.isActive ? 'var(--primary-color)' : 'rgba(0,0,0,0.1)')};
+    transform: ${(props) => (props.isActive ? 'scale(1.5)' : 'none')}
+`
+
+{/* FIM REPORT*/ }
+
+{/* HOME TAKE PART */ }
+
+export const HomeTakePartSection = styled.section`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+
+    @media screen and (max-width: 650px) {
+        flex-direction: column;
+    }
+`
+
+export const HomeTakePartCol1 = styled.div`
+    
+`
+
+export const HomeTakePartCol2 = styled.div`
+    
+`
+
+{/* FIM HOME TAKE PART */ }
+

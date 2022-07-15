@@ -62,6 +62,16 @@ export const Paragraph = styled.p`
     font-size: var(--p-font-size);
     color: var(--low-dark-color);
 `
+export const SectionTitle = styled.div`
+    display: flex;
+    align-items: flex-start;
+    gap: var(--section-title-gap);
+    margin: var(--content-margin);
+
+    @media screen and (max-width: 960px) {
+        flex-direction: column;
+    }
+`
 
 export const FlexColumn = styled.div`
     display: flex;
@@ -71,7 +81,6 @@ export const FlexColumn = styled.div`
 export const FlexRow = styled.div`
     display: flex;
     flex-direction: row;
-    gap: 40px;
 `
 export const EncreaseWidth = styled.div`
     width: 100%;
@@ -129,6 +138,10 @@ export const LinkCard = styled.div`
     }
 `
 
+export const CardTitle = styled.h1`
+    font-weight: 400;
+`
+
 export const GridImage = styled.div`
     align-items: start;
     display: grid;
@@ -142,4 +155,14 @@ export const Figure = styled.figure`
     align-items: center;
     justify-content: center;
     margin: 0;
+`
+
+export const Button = styled.button`
+    outline: none;
+    border: none;
+    background: none;
+    transition:var(--main-transition);
+    cursor: pointer;
+
+    
 `

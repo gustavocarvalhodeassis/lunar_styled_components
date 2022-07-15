@@ -1,5 +1,5 @@
-import { FlexColumn, Paragraph, Title, Container, TextButton, GridImage, Figure, EncreaseWidth } from "../Components";
-import { SystemImagesContent, SystemImagesSection, SystemImagesText } from "./HomeComponents";
+import { FlexColumn, Paragraph, Title, Container, TextButton, GridImage, Figure, EncreaseWidth, SectionTitle } from "../Components";
+import { SystemImagesContent, SystemImagesSection } from "./HomeComponents";
 import { SystemImagesData } from '../../Data/SystemImageData'
 import { CgArrowLongRight } from 'react-icons/cg'
 
@@ -18,7 +18,7 @@ const SystemImages = () => {
             <EncreaseWidth>
                 <Container>
                     <SystemImagesContent>
-                        <SystemImagesText>
+                        <SectionTitle>
                             <Title>
                                 Algumas imagens de nosso sistema...
                             </Title>
@@ -33,7 +33,7 @@ const SystemImages = () => {
                                     <CgArrowLongRight size={35} />
                                 </TextButton>
                             </FlexColumn>
-                        </SystemImagesText>
+                        </SectionTitle>
                         <GridImage>
                             {
                                 SystemImagesData.slice(0,4).map((item, index) => {

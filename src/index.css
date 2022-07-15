@@ -30,8 +30,9 @@ code {
   --header-link-font-size: 15px;
   --mega-title-font-size: 70px;
   --intro-width: 60%;
-  --p-font-size: 20px;
-  --h1-font-size: 30px;
+  --p-font-size: 17px;
+  --h1-font-size: 27px;
+  --section-title-gap: 60px;
   --primary-color: #7361E0;
   --high-light-background: #fff;
   --low-high-background: #F8F7FD;
@@ -57,6 +58,7 @@ code {
     --container-max-width: none;
     --container-padding: 0px 40px;
     --content-margin: 40px 0;
+    --section-title-gap: 40px;
     --grid-image-column: 1;
   }
 }
